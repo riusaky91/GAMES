@@ -388,7 +388,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fb258da3951396b4a983bff5d4ef404b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0100c11fe4a28284cba49df69c538f43, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -549,7 +549,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5593396733265648655, guid: 3e681724ba5e8e64bbb7bd164042f59f,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 00c5a845f74ef484fa16014cb34055e4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 01697e3ff8364824aa42172cea4cde5d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
