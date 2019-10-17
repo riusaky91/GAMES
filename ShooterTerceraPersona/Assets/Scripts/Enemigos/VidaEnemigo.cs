@@ -76,6 +76,7 @@ public class VidaEnemigo : MonoBehaviour
 
     public void IniciarHundimiento()//proceso en el cual el objeto enemigo atravesará el piso (se ejecuta en un evento del Modelo en la animacion Muerte del Enemigo)
     {
+        GetComponent <Rigidbody> ().isKinematic = true;//Activo el elmeto is kinematic para que este no pueda ser movido or ninguna fuerza externa
         GetComponent <UnityEngine.AI.NavMeshAgent> ().enabled = false;//desactivo el NavmeshAgent de mi enemigo 
         GetComponent <Rigidbody> ().isKinematic = true;//Activo el elemeto is kinematic para que este no pueda ser movido por ninguna fuerza externa
         estaHundido = true;//esta hundido pasa a ser verdadero
