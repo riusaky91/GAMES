@@ -119,8 +119,8 @@ MonoBehaviour:
     y: 469
     width: 1132
     height: 478
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -148,10 +148,10 @@ MonoBehaviour:
     y: 0
     width: 1132
     height: 947
-  m_MinSize: {x: 202, y: 444}
-  m_MaxSize: {x: 4002, y: 8044}
+  m_MinSize: {x: 202, y: 422}
+  m_MaxSize: {x: 4002, y: 8022}
   vertical: 1
-  controlID: 33
+  controlID: 34
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 142
+  controlID: 76
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -471,9 +471,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 882d0000
-    m_LastClickedID: 11656
-    m_ExpandedIDs: 00000000202900002c29000062290000e4290000ca2a0000182b0000502c0000f82c0000522d000000ca9a3b
+    m_SelectedIDs: cc2e0000
+    m_LastClickedID: 11980
+    m_ExpandedIDs: 000000009a2a0000a62a0000da2a0000562b0000302c00007c2c0000b42d0000582e0000962e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -501,7 +501,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000202900002c29000062290000e4290000ca2a0000182b0000502c0000f82c0000522d0000
+    m_ExpandedIDs: 000000009a2a0000a62a0000da2a0000562b0000302c00007c2c0000b42d0000582e0000962e0000cc2e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -621,9 +621,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8efbffff
+      m_SelectedIDs: 28f5ffff
+      m_LastClickedID: -2776
+      m_ExpandedIDs: 28f5ffff60f5ffff92f5ffffd2f5ffff08f6ffff60f6ffff90f6ffffc0f6ffffeef6fffff6f8ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.050190594, y: 0.703029, z: -0.04986664, w: -0.70767516}
     speed: 2
-    m_Value: {x: -0.050190594, y: 0.7030289, z: -0.04986664, w: -0.70767516}
+    m_Value: {x: -0.050189096, y: 0.703008, z: -0.049865153, w: -0.70765406}
   m_Size:
     m_Target: 57.416622
     speed: 2
