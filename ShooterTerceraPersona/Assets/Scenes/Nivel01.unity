@@ -2111,10 +2111,15 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1650145100618467382, guid: 8e0ee33cf6eea78479191abfdb6b6f0d,
+    - target: {fileID: 1650145100498997651, guid: 8e0ee33cf6eea78479191abfdb6b6f0d,
         type: 3}
-      propertyPath: m_Text
-      value: Volumen De Efectos
+      propertyPath: m_AnchoredPosition.x
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650145100575046299, guid: 8e0ee33cf6eea78479191abfdb6b6f0d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1650145100787292600, guid: 8e0ee33cf6eea78479191abfdb6b6f0d,
         type: 3}
