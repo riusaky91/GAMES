@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3e30d85c720b8be4db0204f3dcf45d33
+guid: a9c0a4de26d34d545aa1ee71e7bcf908
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
@@ -83,7 +83,7 @@ ModelImporter:
       takeName: Armature|Die
       internalID: 6059336001588132254
       firstFrame: 0
-      lastFrame: 29
+      lastFrame: 34
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -102,7 +102,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 1
+        functionName: ProgramarReiniciarNivel
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -119,7 +126,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -148,7 +155,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

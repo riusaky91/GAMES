@@ -17,4 +17,10 @@ public class EmpezarPartida : MonoBehaviour
             SceneManager.LoadScene("Nivel01");// cambia laa escena nivel01
         }
     }
+
+    public void Creditos()
+    {
+        SceneManager.LoadScene("Creditos");// cambia laa escena nivel01
+    }
+
 }

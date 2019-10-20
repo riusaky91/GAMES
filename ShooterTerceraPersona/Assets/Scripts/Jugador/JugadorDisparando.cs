@@ -25,6 +25,7 @@ public class JugadorDisparando : MonoBehaviour
     Light luzArma;//variable que contendra la luz
     float efectosVisualizacion = 0.2f;//tiempo en el que van a estar activadas la luz y la linea de disparo
     int nivelBalas;//Nivel de la municion en cada momento
+    public Animator anim;//reeferencia al animator
 
     //Hago referencia a los componentes de cada tipo
     void Awake ()
@@ -38,6 +39,7 @@ public class JugadorDisparando : MonoBehaviour
         StartCoroutine(RecargarMunicion());//Inicializo la corrutina para la recarga de municion
         imagenEnemigo.enabled = false;//Deshabilito la imagen por defecto
         vidaSliderEnemigo.gameObject.SetActive(false);//desactivo el objeto Slider inicialmente
+        //anim = GetComponent<Animator>();
     }
 
 
@@ -45,14 +47,19 @@ public class JugadorDisparando : MonoBehaviour
     {
         timer += Time.deltaTime;//el timepo se ira actualizando ty aumentando constantemente
 
-		if(Input.GetButton ("Fire1") && timer >= tiempoEntreBalas && Time.timeScale != 0 && !EventSystem.current.IsPointerOverGameObject(-1))//si oprimimos el boton Fire y el tiempo es mayo o igualal tiempo entre balas, el juego no esta pausado y que no se encuentre el mause encima de ningun objeto de la UI
+		if(Input.GetButton ("Fire1") && timer >= tiempoEntreBalas && Time.timeScale != 0 && !EventSystem.current.IsPointerOverGameObject(-1))//si oprimimos el boton Fire y el tiempo es mayor o igual al tiempo entre balas, el juego no esta pausado y que no se encuentre el mouse encima de ningun objeto de la UI
         {
             Disparar ();//metodo disparar
+            
         }
 
         if(timer >= tiempoEntreBalas * efectosVisualizacion)//si el contador de tiempo es mayor o igual al tiempo entre balas por el tiempo de los efectos de visulaizacion
         {
             DeshabilitarEfectos ();//Metodo desabilitar efectos
+        }
+
+        if (!(Input.GetButton("Fire1"))){
+            anim.SetBool("EstaDisparando", false);
         }
     }
 
@@ -68,6 +75,8 @@ public class JugadorDisparando : MonoBehaviour
     {
         if (nivelBalas <= 0)//si el nivel de balas es menor o igula a 0
             return;//salgo del metodo ya qu eno puedo disparar
+
+        Animando();
 
         nivelBalas--;//disminuyyo la cantidad de balas en 1
         municionSlider.value = nivelBalas;//actualizo el slider por cada bala perdida
@@ -138,5 +147,11 @@ public class JugadorDisparando : MonoBehaviour
     {
         imagenEnemigo.enabled = false;//deshabilito el componente imagen
         vidaSliderEnemigo.gameObject.SetActive(false);//desactivo el objeto Slider 
+    }
+
+    void Animando()//metodo para activar una animacion
+    {
+        bool disparando = (Input.GetButton("Fire1"));//si se oprime el boton fire 1 disparando será verdadero
+        anim.SetBool("EstaDisparando", disparando);//activo la transición con el parametro boolenao en true
     }
 }
