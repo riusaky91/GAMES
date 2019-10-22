@@ -69,7 +69,15 @@ public class VidaJugador : MonoBehaviour
     {
         estaMuerto = true;//pasa a verdadero 
 
-        administrarRanking.AñadirMarcador(AdministrarPuntuacion.puntuacion, "Leo");//añado la puntuacion al marcador
+        if (EmpezarPartida.nombre == null)//si no se rrelleno un nombre 
+        {
+            administrarRanking.AñadirMarcador(AdministrarPuntuacion.puntuacion, "Leo");//añado la puntuacion al marcador y leo como nombre
+        }
+        else
+        {
+            administrarRanking.AñadirMarcador(AdministrarPuntuacion.puntuacion, EmpezarPartida.nombre);//añado la puntuacion al marcador y el nombre asignado
+        }
+
 
         jugadorDisparando.DeshabilitarEfectos ();//el efecto Line Renderer y el efecto luz se deshabilitan
 
