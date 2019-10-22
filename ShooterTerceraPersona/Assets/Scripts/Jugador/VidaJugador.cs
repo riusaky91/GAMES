@@ -13,6 +13,7 @@ public class VidaJugador : MonoBehaviour
     public AudioClip clipMuriendo;//Clip de sonido del jugador muriendo
     public float velocidadColor = 5f;//Velocidad en la que el color se ira haciendo transparente
     public Color colorPantalla = new Color(1f, 0f, 0f, 0.1f);//para pintar la pantalla
+    public AdministrarRanking administrarRanking;
 
 
     Animator anim;//reeferencia al animator
@@ -20,7 +21,7 @@ public class VidaJugador : MonoBehaviour
     MovimientoJugador movimientoJugador;//referencia  la clase movimiento del jugador
     JugadorDisparando jugadorDisparando;
     bool estaMuerto;
-    bool daño;//cada vez que un enemigo le haga dañño al personaje
+    bool daño;//cada vez que un enemigo le haga daño al personaje
 
 
     void Awake ()
@@ -66,7 +67,9 @@ public class VidaJugador : MonoBehaviour
 
     void Muerte ()
     {
-        estaMuerto = true;//pasa a verdadero
+        estaMuerto = true;//pasa a verdadero 
+
+        administrarRanking.AñadirMarcador(AdministrarPuntuacion.puntuacion, "Leo");//añado la puntuacion al marcador
 
         jugadorDisparando.DeshabilitarEfectos ();//el efecto Line Renderer y el efecto luz se deshabilitan
 
