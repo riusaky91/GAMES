@@ -21,7 +21,42 @@ ModelImporter:
   - first:
       74: 8349542763059015795
     second: Armature|Walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Gun
+    second: {fileID: 2100000, guid: f222fdcf6209e1d40be358fa44d829b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lumux Body.001
+    second: {fileID: 2100000, guid: 0e873df3446b58a458dd2346c4a803da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material Dupps Body
+    second: {fileID: 2100000, guid: 43a71123812620945b38fb2bb8c12868, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material Dupps Face
+    second: {fileID: 2100000, guid: 790e50763332d7845b1e6e65e90cf23a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material Gun Base
+    second: {fileID: 2100000, guid: 696560ce3cbd96945949d2967df704c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material Hair
+    second: {fileID: 2100000, guid: bed5d4ff4c3884045994b052298c1a12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ojos
+    second: {fileID: 2100000, guid: 66a8e6b78c4f3bc429ab1faea03b7d7c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

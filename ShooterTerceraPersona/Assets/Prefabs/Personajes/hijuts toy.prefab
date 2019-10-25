@@ -33,7 +33,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293283045477663756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.55, z: 0}
+  m_LocalPosition: {x: 0, y: -1.16, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 5096401901825994658}
@@ -78,7 +78,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 84
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &8990742821988765569
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -90,9 +90,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1.9738172
+  m_Height: 1.912194
   m_Direction: 1
-  m_Center: {x: 0, y: 0.13386983, z: 0}
+  m_Center: {x: 0, y: 0.1646816, z: 0}
 --- !u!135 &6546166192515543610
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -104,8 +104,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.4615445
-  m_Center: {x: 0, y: 0.15089417, z: -0.06369066}
+  m_Radius: 1.291625
+  m_Center: {x: -0.058520675, y: 0.26229328, z: -0.063690625}
 --- !u!82 &4710143733541548520
 AudioSource:
   m_ObjectHideFlags: 0
@@ -127,7 +127,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.9438727
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -222,7 +222,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1.5
-  m_BaseOffset: 0
+  m_BaseOffset: 0.7
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &8424661359663828570
@@ -6238,8 +6238,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 5281119751197324122}
   m_AABB:
-    m_Center: {x: 0.0013376153, y: 0.002055888, z: -0.002172511}
-    m_Extent: {x: 0.0133445375, y: 0.015794557, z: 0.010845883}
+    m_Center: {x: 0.0013376158, y: 0.004503433, z: -0.0023122095}
+    m_Extent: {x: 0.0133445375, y: 0.013347011, z: 0.010985581}
   m_DirtyAABB: 0
 --- !u!1 &8733660111310762079
 GameObject:
