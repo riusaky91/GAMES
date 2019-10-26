@@ -1798,6 +1798,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1845,7 +1846,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -1884,6 +1885,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetivo: {fileID: 5006512735904440209}
   suavidadMovimiento: 6.3
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 8dc12deb97883964b8636b19cef36016, type: 2}
 --- !u!1 &1012753067
 GameObject:
   m_ObjectHideFlags: 0
@@ -8153,10 +8167,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1852910811, guid: 8e0ee33cf6eea78479191abfdb6b6f0d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 828891035}
+    - target: {fileID: 1650145099957076600, guid: 8e0ee33cf6eea78479191abfdb6b6f0d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1650145100571443605, guid: 8e0ee33cf6eea78479191abfdb6b6f0d,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -8172,16 +8187,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5150306
       objectReference: {fileID: 0}
-    - target: {fileID: 1650145099957076600, guid: 8e0ee33cf6eea78479191abfdb6b6f0d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1650145100571443604, guid: 8e0ee33cf6eea78479191abfdb6b6f0d,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1852910811, guid: 8e0ee33cf6eea78479191abfdb6b6f0d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 828891035}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e0ee33cf6eea78479191abfdb6b6f0d, type: 3}
 --- !u!114 &1350427950 stripped
