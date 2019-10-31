@@ -90,9 +90,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1.912194
+  m_Height: 1.6957061
   m_Direction: 1
-  m_Center: {x: 0, y: 0.1646816, z: 0}
+  m_Center: {x: 0, y: 0.27292553, z: 0}
 --- !u!135 &6546166192515543610
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -104,8 +104,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.291625
-  m_Center: {x: -0.058520675, y: 0.26229328, z: -0.063690625}
+  m_Radius: 1.0988746
+  m_Center: {x: -0.058520637, y: 0.4550438, z: -0.06369066}
 --- !u!82 &4710143733541548520
 AudioSource:
   m_ObjectHideFlags: 0
