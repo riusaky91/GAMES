@@ -8,7 +8,7 @@ public class EmpezarPartida : MonoBehaviour
 {
     public ElementoInteractivo pantalla;//referencia al script
 
-    public Text nombreUsuario;
+    public Text nombreUsuario;//variable que referncia al texto del usuario
 
     public static string nombre;//variable estatica que va ser accedida desde cualquier componente llamando a su clase
 
@@ -27,9 +27,9 @@ public class EmpezarPartida : MonoBehaviour
     }
 
 
-    public void TomarUsuario()
+    public void TomarUsuario()//metodo que convierte la variable accedida en la estatica
     {
-        nombre = nombreUsuario.text;
+        nombre = nombreUsuario.text;//tomo la variable ingresada para volverla estatica y as� darle uso en otros scripts
         //Debug.Log(nombre);
     }
 

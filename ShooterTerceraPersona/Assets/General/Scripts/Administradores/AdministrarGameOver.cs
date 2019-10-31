@@ -21,8 +21,7 @@ public class AdministrarGameOver : MonoBehaviour
     {
         if (vidaJugador.nivelSalud <= 0)//Si la salud es menor a 0
         {
-            anim.SetTrigger("GameOver");//Ejecuta el trigger que reproduce la animacion del gameOver
-            
+            anim.SetTrigger("GameOver");//Ejecuta el trigger que reproduce la animacion del gameOver            
         }
     }
 }
