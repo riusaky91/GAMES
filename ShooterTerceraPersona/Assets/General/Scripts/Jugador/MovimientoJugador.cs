@@ -11,13 +11,14 @@ public class MovimientoJugador : MonoBehaviour
     Rigidbody rb;//referencia al componente rigidbody
     int MascaraPiso;
     float longitudRayo = 100f;//Longitud entre la camara y el piso
-    public Joystick joystick;//referencia al joystick 
+    Joystick joystick;//referencia al joystick 
 
     private void Awake()
     {
         anim = GetComponent<Animator>();//obteniendo referencia
         rb = GetComponent<Rigidbody>();//Obteniendo referencia
         MascaraPiso = LayerMask.GetMask("Floor");//asigno la capa a la variable
+        joystick = Joystick.FindObjectOfType<Joystick>();
 
     }
 
