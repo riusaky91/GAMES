@@ -30,7 +30,7 @@ MonoBehaviour:
     m_Settings:
       excludeSkybox: 1
   antialiasing:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       method: 0
       fxaaSettings:
@@ -41,17 +41,17 @@ MonoBehaviour:
         stationaryBlending: 0.95
         motionBlending: 0.85
   ambientOcclusion:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
-      intensity: 1.28
-      radius: 1.97
+      intensity: 1.06
+      radius: 3.32
       sampleCount: 10
       downsampling: 1
       forceForwardCompatibility: 0
       ambientOnly: 0
-      highPrecision: 0
+      highPrecision: 1
   screenSpaceReflection:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       reflection:
         blendType: 0
@@ -84,7 +84,7 @@ MonoBehaviour:
       sampleCount: 10
       frameBlending: 0
   eyeAdaptation:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       lowPercent: 45
       highPercent: 95
@@ -98,7 +98,7 @@ MonoBehaviour:
       logMin: -16
       logMax: 9
   bloom:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       bloom:
         intensity: 0.11
@@ -110,7 +110,7 @@ MonoBehaviour:
         texture: {fileID: 0}
         intensity: 0.35
   colorGrading:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       tonemapping:
         tonemapper: 2
@@ -125,10 +125,10 @@ MonoBehaviour:
         temperature: -0
         tint: -6
         hueShift: 0
-        saturation: 0.45
-        contrast: 0.86
+        saturation: 0.92
+        contrast: 0.45
       channelMixer:
-        red: {x: 1, y: 0, z: 0.03}
+        red: {x: 1, y: 0, z: -0.11}
         green: {x: 0, y: 1, z: 0}
         blue: {x: 0, y: 0, z: 1}
         currentEditingChannel: 0
@@ -306,12 +306,12 @@ MonoBehaviour:
       lut: {fileID: 0}
       contribution: 1
   chromaticAberration:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0.37
+      intensity: 1
   grain:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       colored: 1
       intensity: 0.28
