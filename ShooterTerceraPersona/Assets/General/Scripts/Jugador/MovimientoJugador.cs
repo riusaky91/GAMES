@@ -27,6 +27,7 @@ public class MovimientoJugador : MonoBehaviour
         //float vertical = Input.GetAxisRaw("Vertical");////Obteniendo -1/0/1 dependiendo de lo que se oprima arriba y abajo
         float horizontal = joystick.Horizontal;//Obteniendo -1/0/1 dependiendo de lo que se mueva el joystick
         float vertical = joystick.Vertical;////Obteniendo -1/0/1 dependiendo de lo que se se mueva el joystick
+
         Mover(horizontal, vertical);
         Girar();
         Animando(horizontal, vertical);
