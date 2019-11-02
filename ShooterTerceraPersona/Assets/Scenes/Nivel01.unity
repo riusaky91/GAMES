@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.6792453, g: 0.5606978, b: 0.5606978, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.01
@@ -23,8 +23,8 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
-  m_AmbientMode: 3
+  m_AmbientIntensity: 0.5
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -52,13 +52,13 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
     m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 0
+    m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
     serializedVersion: 12
-    m_Resolution: 2.45
+    m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
-    m_AO: 1
+    m_AO: 0
     m_AOMaxDistance: 3.95
     m_CompAOExponent: 3.45
     m_CompAOExponentDirect: 0
@@ -72,7 +72,7 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-    m_MixedBakeMode: 0
+    m_MixedBakeMode: 2
     m_BakeBackend: 1
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
@@ -98,7 +98,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -200,6 +200,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zapato Shooter (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7781048840422451482, guid: 86383e447cf18554f9518718c873bf67,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6746549923989068553, guid: 86383e447cf18554f9518718c873bf67,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -269,6 +274,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.69645035
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188305407135198915, guid: 86383e447cf18554f9518718c873bf67,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207389983643918890, guid: 86383e447cf18554f9518718c873bf67,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769445411049661718, guid: 86383e447cf18554f9518718c873bf67,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86383e447cf18554f9518718c873bf67, type: 3}
@@ -398,13 +418,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184729322}
-  m_LocalRotation: {x: 0.6582651, y: -0.25823838, z: 0.25823838, w: 0.6582651}
-  m_LocalPosition: {x: 2.873168, y: 2.6, z: -8.1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 2.873168, y: 0.6, z: -8.1}
   m_LocalScale: {x: 99.999985, y: 99.99996, z: 1}
   m_Children: []
   m_Father: {fileID: 2085522143}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 89.97201, y: 0, z: 42.84}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &192189436
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,11 +460,11 @@ RectTransform:
   m_Father: {fileID: 912582153}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 465, y: -168}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!225 &192189438
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -744,7 +764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 9.800049, y: 2.7000122}
+  m_AnchoredPosition: {x: 9.800049, y: 2.6999512}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &387941937
@@ -865,25 +885,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 778536926}
     m_Modifications:
-    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
-      propertyPath: m_Color.r
-      value: 0.9433962
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.017799914
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.026728602
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.2627451
+      propertyPath: m_Name
+      value: Fixed Joystick
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -898,7 +903,7 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.00001882525
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -943,12 +948,12 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -435
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -138
+      value: -124
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -963,7 +968,7 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -973,7 +978,7 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -993,22 +998,37 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
-    - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
-      propertyPath: m_Name
-      value: Fixed Joystick
+      propertyPath: m_Color.r
+      value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.017799914
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.026728602
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.2627451
       objectReference: {fileID: 0}
     - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -1146,7 +1166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 598427273}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1330,10 +1350,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: VHS
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: b566ce1e2d96a0744a3d37add1a56ecf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7217828390678641911, guid: b566ce1e2d96a0744a3d37add1a56ecf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: -1069663585319736713, guid: b566ce1e2d96a0744a3d37add1a56ecf,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1069663585319736713, guid: b566ce1e2d96a0744a3d37add1a56ecf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b566ce1e2d96a0744a3d37add1a56ecf,
         type: 3}
@@ -1419,6 +1454,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zapato Shooter
       objectReference: {fileID: 0}
+    - target: {fileID: 7781048840422451482, guid: 86383e447cf18554f9518718c873bf67,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6746549923989068553, guid: 86383e447cf18554f9518718c873bf67,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1489,6 +1529,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.80021006
       objectReference: {fileID: 0}
+    - target: {fileID: 9188305407135198915, guid: 86383e447cf18554f9518718c873bf67,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207389983643918890, guid: 86383e447cf18554f9518718c873bf67,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769445411049661718, guid: 86383e447cf18554f9518718c873bf67,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86383e447cf18554f9518718c873bf67, type: 3}
 --- !u!1 &690731737
@@ -1531,7 +1586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 695258811}
   - component: {fileID: 695258812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sweater cloth (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1575,7 +1630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 766315667}
   - component: {fileID: 766315668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sweater cloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1640,7 +1695,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 287957126}
-  m_Father: {fileID: 939523844}
+  m_Father: {fileID: 2085522143}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1774,7 +1829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 866038473}
   - component: {fileID: 866038474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VHS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1994,7 +2049,6 @@ Transform:
   - {fileID: 912582153}
   - {fileID: 249076391}
   - {fileID: 1075844688}
-  - {fileID: 778536926}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2116,7 +2170,6 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
-  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2203,19 +2256,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetivo: {fileID: 5006512735904440209}
   suavidadMovimiento: 6.3
---- !u!114 &963194230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 8dc12deb97883964b8636b19cef36016, type: 2}
 --- !u!1 &1012753067
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,7 +2301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1044888895}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Elementos Suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2499,7 +2539,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -50, y: 50}
   m_SizeDelta: {x: 60, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092406566
@@ -2644,7 +2684,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1134868009}
   - component: {fileID: 1134868010}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Zapato Shooter 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2688,7 +2728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1156405135}
   - component: {fileID: 1156405136}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sweater cloth (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7915,7 +7955,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 6
-  joystick: {fileID: 0}
 --- !u!136 &1221334850
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8146,7 +8185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.89990234, y: 12.400024}
+  m_AnchoredPosition: {x: 0.89990234, y: 12.400238}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1230144556
@@ -8278,7 +8317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9245283, g: 0.85379076, b: 0.20060518, a: 0.9529412}
+  m_Color: {r: 0.9150943, g: 0.74407566, b: 0.056114297, a: 0.9529412}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8775,6 +8814,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: sweater cloth
       objectReference: {fileID: 0}
+    - target: {fileID: 1267642589012203751, guid: c718dc3bad5438242a308ab6bbf62b6f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2867891290147416820, guid: c718dc3bad5438242a308ab6bbf62b6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8899,6 +8943,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616157061192029143, guid: c718dc3bad5438242a308ab6bbf62b6f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c718dc3bad5438242a308ab6bbf62b6f, type: 3}
@@ -9880,7 +9929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812079514}
   - component: {fileID: 1812079515}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Zapato Shooter 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10391,6 +10440,7 @@ Transform:
   - {fileID: 1044888895}
   - {fileID: 5006512735399271393}
   - {fileID: 184729326}
+  - {fileID: 778536926}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 72.035, z: 0}
@@ -11991,6 +12041,11 @@ PrefabInstance:
       propertyPath: "da\xF1oImagen"
       value: 
       objectReference: {fileID: 1430078424}
+    - target: {fileID: 5480956866048495396, guid: b2232e193ae29054689318d22c45ec1a,
+        type: 3}
+      propertyPath: saludInicial
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5480956866048495448, guid: b2232e193ae29054689318d22c45ec1a,
         type: 3}
       propertyPath: MinDistance

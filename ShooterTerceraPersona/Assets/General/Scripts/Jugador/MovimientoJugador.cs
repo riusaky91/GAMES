@@ -11,13 +11,14 @@ public class MovimientoJugador : MonoBehaviour
     Rigidbody rb;//referencia al componente rigidbody
     int MascaraPiso;
     float longitudRayo = 100f;//Longitud entre la camara y el piso
-    public Joystick joystick;//referencia al joystick 
+    Joystick joystick;//referencia al joystick 
 
     private void Awake()
     {
         anim = GetComponent<Animator>();//obteniendo referencia
         rb = GetComponent<Rigidbody>();//Obteniendo referencia
         MascaraPiso = LayerMask.GetMask("Floor");//asigno la capa a la variable
+        joystick = Joystick.FindObjectOfType<Joystick>();
 
     }
 
@@ -27,6 +28,7 @@ public class MovimientoJugador : MonoBehaviour
         //float vertical = Input.GetAxisRaw("Vertical");////Obteniendo -1/0/1 dependiendo de lo que se oprima arriba y abajo
         float horizontal = joystick.Horizontal;//Obteniendo -1/0/1 dependiendo de lo que se mueva el joystick
         float vertical = joystick.Vertical;////Obteniendo -1/0/1 dependiendo de lo que se se mueva el joystick
+
         Mover(horizontal, vertical);
         Girar();
         Animando(horizontal, vertical);
