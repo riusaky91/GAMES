@@ -163,8 +163,8 @@ PlayerSettings:
     Android: com.REMIStudios.Tiny
   buildNumber: {}
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 23
-  AndroidTargetSdkVersion: 23
+  AndroidMinSdkVersion: 22
+  AndroidTargetSdkVersion: 22
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
