@@ -26,47 +26,47 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Light Gun
-    second: {fileID: 2100000, guid: f222fdcf6209e1d40be358fa44d829b3, type: 2}
+    second: {fileID: 2100000, guid: 1e20925ef2860f546a905a6c029139a0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Lumux Body.001
-    second: {fileID: 2100000, guid: 0e873df3446b58a458dd2346c4a803da, type: 2}
+    second: {fileID: 2100000, guid: 5d5d90ea5accf69469b7ce3b7df14fae, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material Dupps Body
-    second: {fileID: 2100000, guid: 43a71123812620945b38fb2bb8c12868, type: 2}
+    second: {fileID: 2100000, guid: 0a13a931bf5e3af4ca88274248fc8164, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material Dupps Face
-    second: {fileID: 2100000, guid: 790e50763332d7845b1e6e65e90cf23a, type: 2}
+    second: {fileID: 2100000, guid: 1c426c765be975847b32df570538cde1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material Gun Base
-    second: {fileID: 2100000, guid: 696560ce3cbd96945949d2967df704c2, type: 2}
+    second: {fileID: 2100000, guid: 1ce9cad50ed631243922d79367a41e2b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material Hair
-    second: {fileID: 2100000, guid: bed5d4ff4c3884045994b052298c1a12, type: 2}
+    second: {fileID: 2100000, guid: a1aedd5172634db49bb8ec08bb74a558, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ojos
-    second: {fileID: 2100000, guid: 66a8e6b78c4f3bc429ab1faea03b7d7c, type: 2}
+    second: {fileID: 2100000, guid: 5dfaf7bb847bf054bb671a7b88086656, type: 2}
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 0
+    optimizeGameObjects: 1
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -210,14 +210,14 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -228,18 +228,18 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     meshOptimizationFlags: -1
-    indexFormat: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
-    tangentImportMode: 3
-    normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
@@ -256,7 +256,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.01
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
